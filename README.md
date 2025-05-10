@@ -35,8 +35,8 @@ JOBOT/
 ├── app.py                      # Streamlit entrypoint & UI orchestration      
 ├── requirements.txt            # Python dependencies
 ├── scripts/                    # Core automation & RAG modules
-│   ├── rag_pipeline.py         # Chunking, embedding, ChromaDB index & retrieval
-│   ├── message_generator.py    # tiny-GPT2 prompt construction & generation
+│   ├── email_id_finder.py      # Find email id through hunter.io API
+│   ├── message_generator.py    # Chunking, embedding, ChromaDB index & retrieval, tiny-GPT2 prompt construction & generation
 │   ├── linkedin_automation.py  # Selenium-based LinkedIn messaging with fallbacks
 │   └── email_automation.py     # Hunter.io lookup & Gmail automation
 └── README.md                   # Product overview & setup guide
