@@ -1,39 +1,46 @@
-# LinkedIn + Email Automation App
+# Jobot: AI-Powered LinkedIn & Email Outreach Platform
 
-Find the app here https://inconnect.streamlit.app/
+Explore Jobot live at: https://inconnect.streamlit.app/
 
-This application allows users to automate outreach tasks by:
-
-- Scraping LinkedIn profiles based on name, organization, and position
-- Finding professional email addresses using the Hunter.io API
-- Sending LinkedIn messages using Selenium
-- Sending emails through Gmail using Selenium browser automation
-
-All through a simple and interactive Streamlit interface.
+Jobot is a production-grade platform that streamlines your outreach workflow by combining Retrieval-Augmented Generation (RAG) with automated delivery on LinkedIn and Gmail. From bulk CSV imports to AI-crafted message previews, Jobot turns tedious networking into a one-click, high-impact campaign.
 
 ---
 
-## Features
+## Key Capabilities
 
-- 📄 Input fields for credentials and target information
-- 🔗 Automate LinkedIn profile search and messaging
-- 📧 Find email addresses using Hunter.io and send Gmail messages
-- 🧩 Modular backend with Selenium automation scripts
+- 🔐 **Secure Credentials**  
+  Collect and validate LinkedIn & Gmail login details in-memory with end-to-end encryption.
+
+- 📥 **Flexible Recipient Import**  
+  Manually add individual contacts or upload CSVs of names, organizations, and positions—headers auto-normalized for you.
+
+- 🤖 **AI-Driven Message Generation**  
+  Parse your résumé and job description, retrieve relevant context via embeddings (all-MiniLM-L6-v2 + ChromaDB), and draft personalized subject lines & bodies with tiny-GPT2.
+
+- 🔗 **LinkedIn Automation**  
+  Launch a stealth, headless browser to search profiles by name/org/role and send your tailored messages—all with built-in retries and JS fallbacks.
+
+- 📧 **Gmail Automation**  
+  Discover professional email addresses via Hunter.io (or fallback heuristics), compose in Gmail’s web UI, and send via Selenium automation.
+
+- 📊 **Live Feedback & Logging**  
+  Track per-recipient success or failure, watch a real-time progress bar, and review encrypted, rotating logs for full auditability.
 
 ---
 
 ## Project Structure
-    
-    ```plaintext   
-    automation-app/
-    ├── app.py                  # Main Streamlit application file       
-    ├── requirements.txt        # Python dependencies
-    ├── scripts/                  # Backend automation scripts
-    │   ├── email_id_finder.py           # Find email addresses using Hunter.io API
-    │   ├── LinkedInAutomation.py         # LinkedIn profile scraping and messaging
-    │   └── EmailAutomation.py         #   Gmail automation for sending emails
-    └── README.md              # This file
-    ```
+
+```plaintext
+jobot/
+├── app.py                      # Streamlit entrypoint & UI orchestration      
+├── requirements.txt            # Python dependencies
+├── scripts/                    # Core automation & RAG modules
+│   ├── rag_pipeline.py         # Chunking, embedding, ChromaDB index & retrieval
+│   ├── message_generator.py    # tiny-GPT2 prompt construction & generation
+│   ├── linkedin_automation.py  # Selenium-based LinkedIn messaging with fallbacks
+│   └── email_automation.py     # Hunter.io lookup & Gmail automation
+└── README.md                   # Product overview & setup guide
+```
 
 ---
 
@@ -42,8 +49,8 @@ All through a simple and interactive Streamlit interface.
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/RSaivarsha/LinkedIn_Email_Automation.git
-cd LinkedIn_Email_Automation
+git clone https://github.com/RSaivarsha/jobot.git
+cd jobot
 
 ```
 ### 2. Install dependencies
