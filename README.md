@@ -1,4 +1,4 @@
-# Jobot: AI-Powered LinkedIn & Email Outreach Platform
+# JOBOT: AI-Powered LinkedIn & Email Outreach Platform
 
 Explore Jobot live at: https://inconnect.streamlit.app/
 
