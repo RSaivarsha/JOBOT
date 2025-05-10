@@ -31,7 +31,7 @@ Jobot is a production-grade platform that streamlines your outreach workflow by 
 ## Project Structure
 
 ```plaintext
-jobot/
+JOBOT/
 ├── app.py                      # Streamlit entrypoint & UI orchestration      
 ├── requirements.txt            # Python dependencies
 ├── scripts/                    # Core automation & RAG modules
@@ -49,8 +49,8 @@ jobot/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/RSaivarsha/jobot.git
-cd jobot
+git clone https://github.com/RSaivarsha/JOBOT.git
+cd JOBOT
 
 ```
 ### 2. Install dependencies
