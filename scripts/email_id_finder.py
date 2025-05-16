@@ -1,7 +1,8 @@
+# D:\Saivarsha\NYU\Sem 2\BDML\Project\JOBOT\scripts\email_id_finder.py
 import requests
 
 # 🔐 Paste your Hunter.io API key here
-HUNTER_API_KEY = "79fc44642dec846afa2a11b65f58147aebe50bfd"
+HUNTER_API_KEY = "Your_Hunter_API_Key"
 
 def get_domain_from_organization(organization):
     """

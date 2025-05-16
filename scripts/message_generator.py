@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """
-message_generator.py  ·  Wraps your existing resume_outreach_local logic
+D:\Saivarsha\NYU\Sem 2\BDML\Project\JOBOT\scripts\message_generator.py
+Wraps your existing resume_outreach_local logic
 into a function so we never hit argparse inside Streamlit.
 """
 from __future__ import annotations

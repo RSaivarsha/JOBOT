@@ -1,5 +1,5 @@
 """
-automation_app/scripts/EmailAutomation.py
+D:\Saivarsha\NYU\Sem 2\BDML\Project\JOBOT\scripts\EmailAutomation.py
 -----------------------------------------
 Head-less helpers for logging into Gmail once and sending many messages
 safely from the *same* browser session, using the exact flow from your

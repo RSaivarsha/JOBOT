@@ -1,4 +1,4 @@
-# scripts/LinkedInAutomation.py
+# D:\Saivarsha\NYU\Sem 2\BDML\Project\JOBOT\scripts\LinkedInAutomation.py
 # ────────────────────────────────────────────────────────────────────
 # Bulk LinkedIn DM sender
 # • Opens profile
